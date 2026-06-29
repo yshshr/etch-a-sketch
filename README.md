@@ -1,1 +1,1 @@
-# etch-a-sketch
+# 这是一个儿童画板，基于javascript和css实现。
