@@ -4,3 +4,15 @@ for(let i = 0; i < 16 * 16; i++){
   div.classList.add('square-div');
   container.appendChild(div);
 }
+
+const squares = document.querySelectorAll('.square-div');
+squares.forEach(squarediv => {
+  squarediv.addEventListener('mouseover', e=>{
+    const target = e.target;
+    target.classList.toggle('squarediv-over');
+  });
+  squarediv.addEventListener('mouseout', e=>{
+    const target = e.target;
+    target.classList.toggle('squarediv-over');
+  });
+});
