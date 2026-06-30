@@ -13,8 +13,12 @@ function mouseOverOutHandler(squarediv){
   squarediv.addEventListener('mouseout', e=>{
     const target = e.target;
     target.classList.toggle('squarediv-over');
-    target.style.backgroundColor = 'yellow';
+    target.style.backgroundColor = `rgb(${randomRgbValue()}, ${randomRgbValue()}, ${randomRgbValue()})`;
   });
+}
+
+function randomRgbValue(){
+  return Math.floor(Math.random() * 256);
 }
 
 const squares = document.querySelectorAll('.square-div');
